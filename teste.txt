@@ -1,0 +1,72 @@
+Antônio Sanches <antonio.sanches@rico.com.vc>
+
+	
+to Antônio
+
+Boa tarde!
+Segue o teste para etapa do nosso processo seletivo:
+
+Um novo relatório está sendo criado, e sua tarefa será automatizar esse trabalho utilizando programação. Em anexo, você recebeu dois arquivos:
+
+ 
+
+1. Um documento Word que contém o conteúdo do relatório(você não precisará verificar ou corrigir esse conteúdo).
+
+2. Um PPT com um modelo de uma carteira, apenas para fins de similaridade do padrão estético.
+
+ 
+
+Instruções:
+
+ 
+
+Com esses materiais, crie uma automação em Python ou VBA que gere um PDF a partir do conteúdo do Word. Este relatório será uma lista de fundos de investimento da Família Trend, incluindo:
+
+ 
+
+- A sugestão do fundo indicado para cada classe de ativo.
+
+- A explicação do motivo pelo qual esse fundo foi sugerido.
+
+- Um disclaimer.
+
+ 
+
+Considere que todos os meses poderá haver alterações nos ativos e nas explicações, mas não haverá mudanças na quantidade de ativos ou na disposição dos elementos.
+
+ 
+
+Requisitos:
+
+ 
+
+- A automação deve ser amigável para que outras pessoas, com menor conhecimento em programação, possam executar a rotina.
+
+- Entregue o código no formato mais acessível e documentado possível.
+
+- Explique seu código e como ele deverá ser executado.
+
+ 
+
+Prazo:
+
+ 
+
+A conclusão deve ser feita até segunda-feira, 05/08, às 23:59.
+
+ 
+
+Importante:
+
+-Arquivos Zip são bloqueados. Se enviado nesse formato, o e-mail não será recebido.
+
+ 
+
+Boa sorte!
+
+Abraço,
+
+Antonio Sanches
+
+XP Inc. | Research Rico
+Rico.com.vc | antonio.sanches@rico.com.vc
