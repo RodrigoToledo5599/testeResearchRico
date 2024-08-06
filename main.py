@@ -1,5 +1,7 @@
 from Utils.Utils import Utils 
 from Services.TakingData import TakingData
+from Services.BuildingTheDocument import BuildingTheDocument
+import os
 
 
 
@@ -13,12 +15,13 @@ from Services.TakingData import TakingData
 
 if __name__ == "__main__":
     utils = Utils()
-    TkData = TakingData("Guia de Investimentos (lista de Trends).docx")
+    buildDoc = BuildingTheDocument()
+    relatorio_name = os.listdir("Data")
+    utils.clearOutputDir() # limpa a saida do programa, deve ser inicializado antes de declarar TkData
+    TkData = TakingData(relatorio_name[0])
+    
+    TkData.FetchingTableData()
+    buildDoc(TkData.table_data, TkData.data)
 
 
-    utils.clearOutputDir()
-    fundos = TkData.FetchingDataFromTable()
-    
-    for i in fundos:
-        print(i.text)
-    
+

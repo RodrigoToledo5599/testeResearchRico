@@ -16,3 +16,8 @@ class Utils:
             file_path = os.path.join(dir, file)
             print("Excluindo: ",file_path)
             os.remove(file_path)
+
+
+
+
+

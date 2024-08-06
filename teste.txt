@@ -22,7 +22,7 @@ Instruções:
 
 Com esses materiais, crie uma automação em Python ou VBA que gere um PDF a partir do conteúdo do Word. Este relatório será uma lista de fundos de investimento da Família Trend, incluindo:
 
- 
+
 
 - A sugestão do fundo indicado para cada classe de ativo.
 
