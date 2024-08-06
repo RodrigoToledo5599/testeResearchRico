@@ -1,7 +1,6 @@
-import docx
-import os
-from pptx import Presentation
 from docx import Document
+from docx2pdf import convert
+import os
 
 
 
@@ -15,3 +14,12 @@ class BuildingTheDocument:
 
         doc = Document()
         
+        dir = os.path.join(os.getcwd(),r"Output")
+        print(self.data[1])
+        for i in range(len(self.data)):
+            doc.add_paragraph(self.table_data[i])
+            doc.add_paragraph(self.data[i])
+        
+        
+        
+        doc.save(dir+r"\result.docx")

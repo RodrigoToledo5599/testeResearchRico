@@ -1,8 +1,6 @@
-import docx
 import os
-from pptx import Presentation
 from docx import Document
-# from docx2pdf import convert
+from docx2pdf import convert
 
 
 class TakingData:
@@ -18,7 +16,8 @@ class TakingData:
     def FetchingTableData(self):
         doc = Document(self.file_name)
         table = doc.tables[0]
-
+        # self.table_data = []
+        # self.data = []
         first_cells_data = []
         first_cells_data_pop_fundos = []
 
@@ -30,9 +29,10 @@ class TakingData:
         for i in range(len(first_cells_data)):
             if(i == 0):
                 continue
-            first_cells_data_pop_fundos.append(first_cells_data[i])
-        self.table_data = first_cells_data_pop_fundos
+            first_cells_data_pop_fundos.append(first_cells_data[i].text)
         
+        self.table_data = first_cells_data_pop_fundos
+
         # Pegando todos os paragrafos com informções e separando em um arquivo txt para trabalhar melhor com os dados
         go = False
         allParagraphs = []
@@ -75,11 +75,7 @@ class TakingData:
             self.data.append(finalLine)
             finalLine = ""
 
-        r=0
-        for i in self.data:
-            print(self.table_data[r].text,": ",i,"\n\n\n\n")
-            # print(r,": ",i,"\n\n\n\n")
-            r +=1
+        
             
         
         

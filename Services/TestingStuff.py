@@ -2,7 +2,6 @@ import docx
 import os
 from pptx import Presentation
 from docx import Document
-from docx2pdf import convert
 
 # Nada para se ver aqui
 # Esse espaço é apenas para eu testar algumas funcionalidades enquanto eu desenvolvo.
