@@ -9,6 +9,7 @@ class TakingData:
     def __init__(self, file_name):
         self.file_name = os.path.join(os.getcwd(),f"Data\{file_name}")
         self.table_data = []
+        self.table_data2 = []
         self.data = []
         
 
@@ -19,19 +20,25 @@ class TakingData:
         # self.table_data = []
         # self.data = []
         first_cells_data = []
+        second_cells_data = []
         first_cells_data_pop_fundos = []
+        second_cells_data_pop_fundos = []
 
         # Pegando as informações da tabela
 
         for row in table.rows:
             first_cells_data.append(row.cells[0])
+            second_cells_data.append(row.cells[1])
+            
 
         for i in range(len(first_cells_data)):
             if(i == 0):
                 continue
             first_cells_data_pop_fundos.append(first_cells_data[i].text)
+            second_cells_data_pop_fundos.append(second_cells_data[i].text)
         
         self.table_data = first_cells_data_pop_fundos
+        self.table_data2 = second_cells_data_pop_fundos
 
         # Pegando todos os paragrafos com informções e separando em um arquivo txt para trabalhar melhor com os dados
         go = False

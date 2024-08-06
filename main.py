@@ -16,7 +16,7 @@ if __name__ == "__main__":
     
 
     
-    buildDoc = BuildingTheDocument(TkData.table_data, TkData.data)
+    buildDoc = BuildingTheDocument(TkData.table_data, TkData.data,TkData.table_data2)
     buildDoc.MontandoODocx()
 
 
